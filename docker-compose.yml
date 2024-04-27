@@ -1,0 +1,10 @@
+services:
+  my-react-project:
+    image: my-react-project
+    container_name: my-react-project
+    build: .
+    volumes:
+      - "./:/usr/src/app"
+      - "/usr/src/app/node_modules"
+    ports:
+      - "4173:4173"
